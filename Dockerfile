@@ -6,13 +6,14 @@
 
 # Pull base image.
 FROM dockerfile/python
+ENV VERSION v0.8.26
 
 # Install Node.js
 RUN \
   cd /tmp && \
-  wget http://nodejs.org/dist/node-latest.tar.gz && \
-  tar xvzf node-latest.tar.gz && \
-  rm -f node-latest.tar.gz && \
+  wget http://nodejs.org/dist/$VERSION/node-$VERSION.tar.gz && \
+  tar xvzf node-$VERSION.tar.gz && \
+  rm -f node-$VERSION.tar.gz && \
   cd node-v* && \
   ./configure && \
   CXX="g++ -Wno-unused-local-typedefs" make && \
