@@ -6,7 +6,7 @@
 
 # Pull base image.
 FROM dockerfile/python
-ENV VERSION v0.8.26
+ENV VERSION v0.10.35
 
 # Install Node.js
 RUN \
