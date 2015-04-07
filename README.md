@@ -15,7 +15,7 @@ This repository contains **Dockerfile** of [Node.js](http://nodejs.org/) for [Do
 
 2. Download [automated build](https://registry.hub.docker.com/u/dockerfile/nodejs/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull dockerfile/nodejs`
 
-   (alternatively, you can build an image from Dockerfile: `docker build -t="dockerfile/nodejs" github.com/dockerfile/nodejs`)
+   (alternatively, you can build an image from Dockerfile: `docker build -t="nodejs:0.10.35" github.com/dockerfile/nodejs`)
 
 
 ### Usage
